@@ -1,6 +1,10 @@
-import {createHeader, createNav, createMain} from './home.js'
+import loadSite from './website.js'
+import loadHome from './home.js'
+import loadMenu from './menu.js'
+
+loadSite();
 
 
-createHeader()
-createNav()
-createMain()
+
+
+
