@@ -6,23 +6,36 @@ import loadContact from './contact.js'
 loadSite();
 loadHome()
 
-function addMenuEvent() {
+function addEvents() {
+    const homeBtn = document.querySelector('.home-btn')
     const menuBtn = document.querySelector('.menu-btn');
-    menuBtn.addEventListener('click', loadMenu);
-}
-addMenuEvent()
-
-function addHomeEvent() {
-    const homeBtn = document.querySelector('.home-btn');
-    homeBtn.addEventListener('click', loadHome);
-}
-addHomeEvent()
-
-function addContactEvent() {
     const contactBtn = document.querySelector('.contact-btn');
-    contactBtn.addEventListener('click', loadContact);
+
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            if(e.target.textContent === 'Menu') {
+                menuBtn.classList.add('active');
+                homeBtn.classList.remove('active');
+                contactBtn.classList.remove('active');
+                loadMenu();
+
+            }else if(e.target.textContent === 'Contact') {
+                menuBtn.classList.remove('active');
+                homeBtn.classList.remove('active');
+                contactBtn.classList.add('active');
+                loadContact();
+
+            }else if(e.target.textContent === 'Home') {
+                menuBtn.classList.remove('active');
+                homeBtn.classList.add('active');
+                contactBtn.classList.remove('active');
+                loadHome();
+            }
+        })
+    })
 }
-addContactEvent();
+addEvents()
 
 
 

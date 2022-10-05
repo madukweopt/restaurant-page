@@ -21,6 +21,8 @@ function createHome() {
 }
 
 function loadHome() {
+    const homeBtn = document.querySelector('.home-btn');
+    homeBtn.classList.add('active');
     const main = document.querySelector('.main')
     main.textContent = '';
     main.appendChild(createHome());
