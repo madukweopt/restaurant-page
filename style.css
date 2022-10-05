@@ -4,9 +4,6 @@ body {
     margin: 0px;
     
 }
-#content {
-    
-}
 
 .header {
     height: 30vh;
@@ -50,7 +47,7 @@ img {
     opacity: 0.8;  
 }
 
-main {
+.home {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,4 +63,39 @@ p {
     text-align: center;
     line-height: 1.7;
     color: #fcf8f8
+}
+.hide {
+    display: none;
+}
+
+.menu > div > img {
+    height: 300px;
+    width: 300px;
+    margin-top: 50px;
+    border-radius: 20%;
+
+}
+
+.menu > div:hover {
+    background-color: blueviolet;
+}
+
+.menu > div {
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    color: rgb(13, 4, 15);
+    font-weight: 600;
+}
+
+.menu {
+    gap: 20px;
+    background-image: url(images/background4.jpg);
+    background-repeat: no-repeat;
+    background-size: 136%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+
 }
