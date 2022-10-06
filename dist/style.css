@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
 html,
 body {
     padding: 0px;
@@ -48,6 +52,8 @@ h1 {
     margin-top: 0px;
     padding: 15px;
     font-size: 40px;
+    font-family: 'Metal Mania', 'Times New Roman', Times, serif;
+
 }
 
 img {
@@ -66,12 +72,17 @@ img {
     background-size: 135%;
 }
 
+.home > p {
+    font-family: 'Fjalla One', 'Courier New', Courier, monospace;
+}
+
 p {
     font-size: 36px;
     width: 400px;
     text-align: center;
     line-height: 1.7;
-    color: #fcf8f8
+    color: #fcf8f8;
+    font-family: 'Gruppo', 'Courier New', Courier, monospace;
 }
 .hide {
     display: none;
