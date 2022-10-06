@@ -15,6 +15,6 @@
 
 - It took me a while to get a hold on webpack.
 
-### How has the project improved me?
+### How has the project improved me? 
 
 - I now have full knowledge of the basics of webpack, how it works and how to use it to build a maintainable site with good performance.
