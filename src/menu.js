@@ -1,6 +1,3 @@
-import { createMain } from "./home";
-
-
 function createMenu() {
     const menu = document.createElement('div');
     menu.classList.add('menu');
@@ -67,6 +64,5 @@ function loadMenu() {
     main.textContent = '';
     main.appendChild(createMenu());
 }
-
 
 export default loadMenu;

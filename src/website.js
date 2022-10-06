@@ -28,7 +28,6 @@ function createHeader() {
     header.appendChild(nav);
 
     return header;
-
 }
 
 function createMain() {
@@ -41,9 +40,6 @@ function loadSite() {
     const content = document.querySelector('#content');
     content.appendChild(createHeader());
     content.appendChild(createMain());
-
 }
-
-
 
 export default loadSite
