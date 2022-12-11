@@ -144,5 +144,12 @@ p {
     .active {
         transform: scale(1.2);
     }
+    .home {
+        background-size: cover;
+    }
+    .menu {
+        background-size: cover;
+    }
+    
     
 }
